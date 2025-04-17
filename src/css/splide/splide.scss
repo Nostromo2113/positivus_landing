@@ -1,0 +1,86 @@
+
+
+.splide {
+    --star-svg: url('/images/icons/star_pagination.svg');
+    --star-svg-accent: url('/images/icons/star_pagination-accent.svg');
+    --splide-height: 625px;
+    --splide-padding-top: 84px;
+    --splide-padding-bottom: 68px;
+    height: var(--splide-height);
+
+
+
+    @include mobile {
+        --splide-padding-top: 30px;
+        --splide-height: 555px;
+        --splide-padding-bottom: 60px;
+        padding-inline: 30px;
+    }
+
+    padding-top: var(--splide-padding-top);
+    height: var(--splide-height);
+
+    &__slide {
+        color: var(--color-light);
+    }
+
+    &__arrow {
+        top: calc(100% - var(--splide-padding-bottom));
+        transform: translateY(-100%);
+        width: 20px;
+        height: auto;
+
+        --arrow-position: 30%;
+        
+        @include tablet {
+            --arrow-position: 20%;
+        }
+        @include mobile {
+            --arrow-position: 10%; 
+        }
+
+
+        &--next{
+            right: var(--arrow-position);
+        }
+
+        &--prev{
+            left: var(--arrow-position);
+        }
+    }
+
+    &__pagination {
+        padding-bottom: var(--splide-padding-bottom);
+
+
+        &__page {
+            background: none;
+            background-color: var(--color-dark);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: var(--star-svg);
+            height: 20px;
+            width: 20px;
+
+            &:hover {
+                background-color: var(--color-dark);
+                background-image: var(--star-svg-accent);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+    }
+}
+
+.splide__pagination__page.is-active {
+    background: inherit;
+    background-image: var(--star-svg-accent);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.background {
+    background-color: var(--color-dark);
+    border-radius: var(--border-radius-large);
+}
+

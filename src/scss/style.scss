@@ -1,0 +1,48 @@
+    //RESET 
+    @import 'normalize.css';
+    @import '../css/reset.scss';
+    
+    //GLOBALS
+@import 
+    'fonts', 
+    'mixins', 
+    'media', 
+    'utils', 
+    'variables', 
+    'globals';
+
+    //LIBS 
+@import '@splidejs/splide/css/skyblue';
+
+
+    //BLOCKS
+@import 
+    './blocks/radios',
+    './blocks/radio',
+    './blocks/field',
+    './blocks/button',
+    './blocks/grid',
+    './blocks/burger-button',
+    './blocks/header',
+    './blocks/cross-button',
+    './blocks/section',
+    './blocks/hero',
+    './blocks/mobile-overlay',
+    './blocks/puddle-bg',
+    './blocks/services',
+    './blocks/service-card',
+    './blocks/banner',
+    './blocks/studies',
+    './blocks/process',
+    './blocks/team',
+    './blocks/team-card',
+    './blocks/pagination',
+    './blocks/reviews',
+    './blocks/review-card',
+    '/src/css/splide/splide.scss',
+    './blocks/contact-us',
+    './blocks/soc1als',
+    './blocks/subscribe-form',
+    './blocks/footer';
+    
+

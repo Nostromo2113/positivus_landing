@@ -1,0 +1,9 @@
+.reviews {
+    display: flex;
+    flex-direction: column;
+    row-gap: 110px;
+    padding-block: 84px 54px;
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    border-radius: var(--border-radius-large);
+}

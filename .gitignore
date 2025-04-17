@@ -1,0 +1,33 @@
+# Папка с зависимостями
+node_modules/
+.DS_Store
+
+# Логи и кэш
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Файлы сборки
+dist/
+build/
+.out/
+.next/
+
+# Настройки IDE
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Переменные окружения
+.env
+.env.local
+.env*.local
+
+# Кэш Vite / Webpack
+.cache/
+.temp/

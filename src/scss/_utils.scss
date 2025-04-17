@@ -1,0 +1,25 @@
+.container {
+    //к max-width добавляем значение padding, что бы макс ширина окна измерялась с учетом паддинга
+    //умножаем на 2, т.к. значение padding-inline добавляет это знач. с обоих сторон
+    //паддинг в итоге ужимает блок с двух сторон, и мы возвращаемся к размеру container-width
+    //и мы получаем исходную макс. ширину блока с учетом паддингов
+    max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+    margin-inline: auto;
+    padding-inline: var(--container-padding-x);
+}
+
+.visually-hidden {
+    @include visually-hidden;
+}
+
+.hidden-mobile {
+    @include mobile {
+        display: none !important;
+    }
+}
+
+.visible-mobile {
+    @include mobile-above {
+        display: none !important;
+    }
+}
